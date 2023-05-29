@@ -1,0 +1,269 @@
+:root {
+    --main-color: #ec5242;
+    --main-color-dark: #3e3e3e;
+    --main-color-darker: #282b32;
+    --main-color-light: #fff;
+    --main-color-lighter: #caf0f8;
+    --text-color-light: #d3d3d3;
+    --text-color-black: #272a31;
+    --text-color-darker: #0c0f0a;
+    --text-color-white: #f8f9fa;
+    --border-color: #bdc3c7;
+    --border-radius: 5px;
+    --shadow-color: rgba(52, 58, 64, 0.2); /* #343a40 */
+    --shadow-color-light: rgba(73, 80, 87, 0.4); /* #495057 */
+    --shadow-color-dark: rgba(33, 37, 41, 0.6); /* #212529 */
+    --containers-max-width: 1440px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    color: var(--text-color-black);
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /* ---------------------HEADER------------------------ */
+
+.header {
+    /* background-color: var(--main-color); */
+}
+
+.top-bar_header {
+    background-color: var(--main-color-dark);
+}
+
+.top-bar_header_container {
+    max-width: var(--containers-max-width);
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem 2rem;
+    margin: auto;
+}
+
+.top-bar_header_container a {
+    font-size: 1.6rem;
+    color: var(--text-color-white);
+    padding: 0 1rem;
+  }
+
+  .top-bar_header_container img {
+    height: 1.4rem;
+  }
+
+  /* ---------------------NAVIGATION BAR------------------------ */
+
+  .nav {
+    position: relative;
+  }
+ .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    max-width: var(--containers-max-width);
+    margin: auto;
+    padding: 0.5rem 2rem;
+ }
+
+ /* ------------ TOUR LOGO ------------ */
+.tour-logo {
+    display: none;
+    width: 140px;
+    background:
+      linear-gradient(
+        58deg,
+        hsla(6, 82%, 59%, 1) 30%,
+        hsla(33, 94%, 57%, 1) 100%
+      );
+    border-radius: 50px 5px 5px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+  }
+  
+  .tour-logo a {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1rem 0;
+  }
+  
+  .tour_logo {
+    font-size: 3rem;
+    color: var(--text-color-white);
+  }
+  
+  .tour-logo_text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tour-logo_up {
+    color: var(--text-color-white);
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 0.8;
+  }
+  
+  .tour-logo_mid {
+    color: var(--text-color-white);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  
+  .tour-logo_bot {
+    color: var(--text-color-white);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 0.8;
+  }
+  
+  /* -------------- NAV BAR LINKS---------- */
+  .nav_links {
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5rem;
+    list-style: none;
+  }
+  
+  .nav_links a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #868686;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .nav_links a:hover {
+    color: var(--main-color);
+  }
+  
+  .nav_links li:first-child a {
+    color: var(--main-color);
+  }
+  
+  .nav_links li:last-child a {
+    padding: 0.8rem 1.5rem;
+    color: var(--main-color);
+    border: 4px solid var(--main-color);
+  }
+  
+  .nav_links li:nth-child(5) a {
+    margin-right: 2rem;
+  }
+  
+  /* ------------- BURGER MENU ------------ */
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.51rem;
+    margin: 3.5vh 1vw;
+    cursor: pointer;
+    border-style: none;
+    background-color: transparent;
+    z-index: 1;
+  }
+  
+  .nav_menu .bar {
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--text-color-black);
+    transition: all 0.3s ease;
+  }
+
+  /* --------------- FOOTER -------------- */
+footer {
+    background-color: var(--main-color-dark);
+    color: var(--text-color-white);
+  }
+  
+  .footer {
+    max-width: var(--containers-max-width);
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: var(--text-color-light);
+  }
+
+/* ---------- MEDIA QUERIES --------- */
+
+
+/* ---------- MEDIA QUERY @768PX --------- */
+
+@media screen and (min-width: 768px) {
+    header {
+      position: static;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+  
+    .top-bar_header {
+      display: block;
+    }
+  
+    .top-bar_header_container {
+      display: flex;
+    }
+  
+    nav {
+      position: static;
+    }
+  
+    .nav-bar {
+      position: static;
+    }
+  
+    .tour-logo {
+      display: block;
+    }
+  
+    .nav_links {
+      display: flex;
+      gap: 1.5rem;
+    }
+  
+    .nav_links a {
+      font-size: 1.6rem;
+    }
+  
+    .nav_menu {
+      display: none;
+    }
+}
+
+/* --------------- MEDIA QUERY >@1440PX --------------- */
+@media screen and (min-width: 1440px) {
+    .nav_links {
+      gap: 6rem;
+    }
+}
