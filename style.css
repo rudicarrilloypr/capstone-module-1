@@ -1,3 +1,4 @@
+/* stylelint-disable max-empty-lines */
 :root {
   --main-color: #ec5242;
   --main-color-dark: #3e3e3e;
@@ -38,10 +39,6 @@ a {
 }
 
 /* ---------------------HEADER------------------------ */
-
-.header {
-  /* background-color: var(--main-color); */
-}
 
 .top-bar_header {
   background-color: var(--main-color-dark);
@@ -401,6 +398,7 @@ a {
   background-image: url("./assets/img/orangeTexture.jpg");
   background-repeat: repeat;
   background-size: contain;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -703,9 +701,6 @@ a {
   text-align: center;
 }
 
-/* ---------- MEDIA QUERIES --------- */
-
-
 /* ---------- MEDIA QUERY @768PX --------- */
 
 @media screen and (min-width: 768px) {
@@ -843,7 +838,6 @@ a {
     gap: 2rem 4rem;
   }
 
-
   /* --------------FOOTER----------------- */
   .footer_logo {
     margin: 1rem;
@@ -890,7 +884,6 @@ a {
       display: none;
     }
   }
-
 
   /* --------------- MEDIA QUERY >@1440PX --------------- */
   @media screen and (min-width: 1440px) {
