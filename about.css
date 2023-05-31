@@ -204,8 +204,16 @@
 /* ---------- MEDIA QUERY @768PX --------- */
 
 @media screen and (min-width: 768px) {
+
+.tour-logo {
+margin-top: 15px;
+}
   .about_main-tour {
     padding-top: 0;
+  }
+
+  .about_main_section_title {
+    margin-top: 15px;
   }
 
   .about_images_wrapper {

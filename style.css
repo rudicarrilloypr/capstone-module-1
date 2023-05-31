@@ -736,6 +736,9 @@ a {
     display: block;
   }
 
+  .main-tour {
+    margin-bottom: 10px;
+  }
   .nav_links {
     display: flex;
     gap: 1.5rem;
@@ -838,6 +841,13 @@ a {
     padding: 2rem;
   }
 
+  /* --------------SPONSORS----------------- */
+
+  .sponsors__section__container {
+    gap: 2rem 4rem;
+  }
+
+
   /* --------------FOOTER----------------- */
   .footer_logo {
     margin: 1rem;
@@ -851,6 +861,15 @@ a {
   /* --------------MEDIA QUERY >1024PX----------------- */
 
   @media screen and (min-width: 1024px) {
+.tour-logo {
+  margin-top: 15px;
+}
+
+    .main-tour::before {
+        background-position: center bottom; /* Ajusta aquí la posición vertical deseada */
+        height: 900px;
+      }
+    
     .main_section_container {
       width: 98%;
     }
@@ -868,8 +887,8 @@ a {
     .lineup_section_card_img {
       max-width: 120px;
     }
-  }
-}
+    }
+  
 
 @media screen and (min-width: 1024px) {
   #hamb {
@@ -927,6 +946,7 @@ a {
   }
 
   .sponsors__section__container {
-    gap: 4rem 8rem;
+    gap: 2rem 4rem;
   }
+}
 }
