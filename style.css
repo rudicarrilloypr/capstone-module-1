@@ -138,6 +138,7 @@ a {
   flex-flow: column nowrap;
   align-items: left;
   justify-content: center;
+  margin-top: -20px;
 }
 
 .tour-logo_up {
@@ -318,13 +319,16 @@ a {
 }
 
 .main_section_description {
-  width: 86vw;
+  width: auto;
   max-width: 350px;
-  margin: 1.5vh 0 2.5vh 0;
+  margin: 3vh 0 2.5vh 0;
   font-size: 1.6rem;
   text-align: left;
   line-height: 1.5;
   color: var(--text-color-black);
+  border: 2px solid var(--text-color-light);
+  background-color: #ebf0f1;
+  padding: 1rem;
 }
 
 .main_section_date {
@@ -447,6 +451,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  transition: opacity 0.6s ease;
 }
 
 .see-more {
@@ -455,6 +460,12 @@ a {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  transition: opacity 0.6s ease;
+}
+
+.see-more:hover {
+    opacity: 0.8;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -509,6 +520,11 @@ a {
   grid-column-gap: 2rem;
   margin: 0 auto;
   padding: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.lineup_section_card.hide {
+  opacity: 0;
 }
 
 .lineup_section_card img {
@@ -552,7 +568,7 @@ a {
 /* ----------SPONSORS SECTION---------- */
 #sponsors_section {
   min-height: 250px;
-  padding: 4vh 0;
+  padding: 6vh 0;
   display: flex;
   align-content: center;
   text-align: center;
@@ -581,10 +597,10 @@ a {
 }
 
 .sponsors_section_container img {
-  width: 200px;
-  height: 100px;
+  width: fit-content;
+  height: fit-content;
   max-width: 25%;
-  max-height: 70%;
+  max-height: 45%;
 }
 
 .sponsors_section_logo {
@@ -616,6 +632,7 @@ a {
 
 .footer_disclaimer {
   margin: 0 1.5rem;
+  margin-top: 20px;
   text-align: center;
 }
 

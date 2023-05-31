@@ -26,10 +26,10 @@ seeMoreButton.addEventListener('click', () => {
 
     if (areAllCardsVisible) {
       showAllCards();
-      seeMoreButton.textContent = 'Less';
+      seeMoreButton.textContent = 'Hide';
     } else {
       hideCardsAfterIndex(initialVisibleCards);
-      seeMoreButton.textContent = 'More';
+      seeMoreButton.textContent = 'Full Lineup';
     }
   }
 });
