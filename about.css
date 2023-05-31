@@ -204,10 +204,10 @@
 /* ---------- MEDIA QUERY @768PX --------- */
 
 @media screen and (min-width: 768px) {
+  .tour-logo {
+    margin-top: 15px;
+  }
 
-.tour-logo {
-margin-top: 15px;
-}
   .about_main-tour {
     padding-top: 0;
   }

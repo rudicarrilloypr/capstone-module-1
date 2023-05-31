@@ -738,7 +738,10 @@ a {
 
   .main-tour {
     margin-bottom: 10px;
+    height: 90vh;
+    max-height: calc((var(--containers-max-width)) / 1.5);
   }
+
   .nav_links {
     display: flex;
     gap: 1.5rem;
@@ -753,11 +756,6 @@ a {
   }
 
   /* ------------ MAIN SECTION--------------- */
-
-  .main-tour {
-    height: 90vh;
-    max-height: calc((var(--containers-max-width)) / 1.5);
-  }
 
   .main-tour::before {
     background-image: url("./assets/img/concertBanner.jpg");
@@ -861,15 +859,15 @@ a {
   /* --------------MEDIA QUERY >1024PX----------------- */
 
   @media screen and (min-width: 1024px) {
-.tour-logo {
-  margin-top: 15px;
-}
+    .tour-logo {
+      margin-top: 15px;
+    }
 
     .main-tour::before {
-        background-position: center bottom; /* Ajusta aquí la posición vertical deseada */
-        height: 900px;
-      }
-    
+      background-position: center bottom; /* Ajusta aquí la posición vertical deseada */
+      height: 900px;
+    }
+
     .main_section_container {
       width: 98%;
     }
@@ -887,66 +885,65 @@ a {
     .lineup_section_card_img {
       max-width: 120px;
     }
+  }
+
+  @media screen and (min-width: 1024px) {
+    #hamb {
+      display: none;
     }
-  
-
-@media screen and (min-width: 1024px) {
-  #hamb {
-    display: none;
-  }
-}
-
-
-/* --------------- MEDIA QUERY >@1440PX --------------- */
-@media screen and (min-width: 1440px) {
-  .nav_links {
-    gap: 6rem;
   }
 
-  /* ------------MAIN SECTION----------- */
-  .main-tour::before {
-    background-image: url("./assets/img/concertBanner.jpg");
-  }
 
-  .main-tour_container {
-    padding: 9rem 5rem 9rem 8rem;
-  }
+  /* --------------- MEDIA QUERY >@1440PX --------------- */
+  @media screen and (min-width: 1440px) {
+    .nav_links {
+      gap: 6rem;
+    }
 
-  .main-tour_subtitle {
-    font-size: 3.3rem;
-  }
+    /* ------------MAIN SECTION----------- */
+    .main-tour::before {
+      background-image: url("./assets/img/concertBanner.jpg");
+    }
 
-  .main-tour_title {
-    font-size: 7.5rem;
-    -webkit-text-stroke-width: 4px;
-  }
+    .main-tour_container {
+      padding: 9rem 5rem 9rem 8rem;
+    }
 
-  .main-tour_title span {
-    font-size: 10.3rem;
-  }
+    .main-tour_subtitle {
+      font-size: 3.3rem;
+    }
 
-  .main-tour_description {
-    max-width: calc((var(--containers-max-width)) / 2.1);
-  }
+    .main-tour_title {
+      font-size: 7.5rem;
+      -webkit-text-stroke-width: 4px;
+    }
 
-  /* -----------PROGRAM SECTION------------- */
-  .section_title {
-    font-size: 3rem;
-  }
+    .main-tour_title span {
+      font-size: 10.3rem;
+    }
 
-  .main_program_container_card {
-    flex-basis: 18%;
-  }
+    .main-tour_description {
+      max-width: calc((var(--containers-max-width)) / 2.1);
+    }
 
-  /* -------LINEUP SECTION---------- */
-  .lineup_section_wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
-    grid-gap: 2rem;
-    padding: 2rem;
-  }
+    /* -----------PROGRAM SECTION------------- */
+    .section_title {
+      font-size: 3rem;
+    }
 
-  .sponsors__section__container {
-    gap: 2rem 4rem;
+    .main_program_container_card {
+      flex-basis: 18%;
+    }
+
+    /* -------LINEUP SECTION---------- */
+    .lineup_section_wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+      grid-gap: 2rem;
+      padding: 2rem;
+    }
+
+    .sponsors__section__container {
+      gap: 2rem 4rem;
+    }
   }
-}
 }
