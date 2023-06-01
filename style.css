@@ -11,9 +11,9 @@
   --text-color-white: #f8f9fa;
   --border-color: #bdc3c7;
   --border-radius: 5px;
-  --shadow-color: rgba(52, 58, 64, 0.2); /* #343a40 */
-  --shadow-color-light: rgba(73, 80, 87, 0.4); /* #495057 */
-  --shadow-color-dark: rgba(33, 37, 41, 0.6); /* #212529 */
+  --shadow-color: rgba(52, 58, 64, 0.2);
+  --shadow-color-light: rgba(73, 80, 87, 0.4);
+  --shadow-color-dark: rgba(33, 37, 41, 0.6);
   --containers-max-width: 1440px;
 }
 
@@ -186,7 +186,7 @@ a {
 
 /* -------------- NAV BAR LINKS---------- */
 .nav_links {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: -20px;
   display: none;
   align-items: center;
@@ -538,9 +538,11 @@ a {
 }
 
 .see-more {
-  background-color: var(--main-color);
-  color: white;
-  border: none;
+  width: 488px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: gray 0.5px solid;
   padding: 10px 20px;
   cursor: pointer;
   transition: opacity 0.6s ease;
@@ -548,6 +550,19 @@ a {
 
 .see-more:hover {
   opacity: 0.8;
+}
+
+.see-more::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 6px;
+  border-top: 6px solid orange;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -855,6 +870,15 @@ a {
       margin-top: 15px;
     }
 
+    .nav_links {
+      display: flex;
+      background-color: var(--main-color-light);
+      height: 80px;
+      margin-block-start: auto;
+      justify-content: right;
+      padding-right: 2%;
+    }
+
     .main-tour::before {
       background-position: center bottom; /* Ajusta aquí la posición vertical deseada */
       height: 900px;
@@ -936,5 +960,11 @@ a {
     .sponsors__section__container {
       gap: 2rem 4rem;
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #sponsors_section.desktop-only {
+    display: none;
   }
 }
