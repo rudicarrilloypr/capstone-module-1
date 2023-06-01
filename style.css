@@ -771,6 +771,7 @@ a {
 
   .main_section_container {
     padding: 9rem 5rem 9rem 5rem;
+    margin-bottom: -90px;
   }
 
   .main_section_subtitle {
