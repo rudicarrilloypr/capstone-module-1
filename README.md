@@ -68,7 +68,7 @@ In this project was only used HTML and CSS.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- If you want to see a preview from the project go and [click here](https://rudicarrilloypr.github.io/rnbworldtour.github.io/main.html)
+- If you want to see a preview from the project go and [click here](https://rudicarrilloypr.github.io/capstone-module-1/main.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
