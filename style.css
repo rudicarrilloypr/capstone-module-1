@@ -538,7 +538,7 @@ a {
 }
 
 .see-more {
-  width: 488px;
+  width: 90%;
   height: 50px;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -558,7 +558,7 @@ a {
   width: 0;
   height: 0;
   margin-left: 6px;
-  border-top: 6px solid orange;
+  border-top: 6px solid #ec5242;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   vertical-align: middle;
