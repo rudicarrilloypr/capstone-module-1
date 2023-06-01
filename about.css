@@ -1,0 +1,245 @@
+.about_main-tour {
+  max-height: var(--containers-max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  background-image: url(./assets/img/desktop-background.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about_main_section {
+  min-height: 450px;
+  max-width: calc((var(--containers-max-width)) / 2);
+  margin: 5vh auto 2.5vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+
+.about_main_section_subtitle {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+.about_main_section_title {
+  max-width: 900px;
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  background-image: url("./assets/img/orangeTexture.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-top: -300px;
+}
+
+.about_div {
+  display: block;
+  width: 30px;
+  margin: 1rem auto;
+}
+
+.about_main_section_description {
+  margin: 3vh 0;
+  margin-bottom: 50px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--text-color-black);
+  background: var(--text-color-white);
+  border: 1px solid var(--text-color-light);
+}
+
+.about_main_section_info {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.about_main_section_email {
+  text-align: center;
+  text-decoration: solid underline;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--text-color-black);
+
+  /* margin-bottom: fit-content; */
+}
+
+.about_logo_section {
+  background: transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about_section_container {
+  min-height: 350px;
+  max-width: calc((var(--containers-max-width)) / 2);
+  padding: 5vh 1rem 2.5vh 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.about_tour-logo {
+  display: flex;
+  margin: 6vh auto 8vh auto;
+  transform: translate(0) scale(2);
+  border-radius: 7px;
+}
+
+.about_section_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-color-black);
+  margin: 0 auto;
+}
+
+.about_section_title_info {
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--text-color-black);
+}
+
+.about_history_container {
+  width: 85vw;
+  min-height: auto;
+  padding-bottom: 0;
+}
+
+.about_images_wrapper {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "figure-1"
+    "figure-2";
+  gap: 2rem;
+  margin: 2vh auto 5vh auto;
+  justify-items: center;
+  align-content: center;
+  transition: all 0.3s ease;
+}
+
+.about_images_wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about_image-1 {
+  grid-area: figure-1;
+  width: 100%;
+}
+
+.overlay_text-1 {
+  grid-area: figure-1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: var(--text-color-white);
+  background-color: rgba(236, 82, 66, 0.6);
+  z-index: 20;
+}
+
+.overlay_text h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--text-color-white);
+  margin: 0 auto;
+}
+
+.overlay_text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text-color-white);
+  margin: 0 auto;
+}
+
+.about_image-2 {
+  grid-area: figure-2;
+  width: 100%;
+}
+
+.overlay_text-2 {
+  grid-area: figure-2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: var(--text-color-white);
+  background-color: rgba(236, 82, 66, 0.6);
+  z-index: 20;
+}
+
+/* ---------- MEDIA QUERIES --------- */
+
+/* ---------- MEDIA QUERY @768PX --------- */
+
+@media screen and (min-width: 768px) {
+  .tour-logo {
+    margin-top: 15px;
+  }
+
+  .about_main-tour {
+    padding-top: 0;
+  }
+
+  .about_main_section_title {
+    margin-top: 15px;
+  }
+
+  .about_images_wrapper {
+    width: 80vw;
+    max-width: calc((var(--containers-max-width)) / 1.5);
+    grid-template-areas: "figure-1 figure-2";
+    gap: 2rem;
+    margin: 2vh auto 5vh auto;
+  }
+
+  .about_div {
+    display: block;
+  }
+
+  #sponsors_section {
+    display: none;
+  }
+
+  .about_footer {
+    background: var(--main-color-dark);
+    color: var(--text-color-white);
+  }
+
+  .tour-logo,
+  .footer_logo {
+    display: block;
+  }
+}

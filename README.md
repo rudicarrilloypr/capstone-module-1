@@ -29,7 +29,6 @@
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
@@ -61,6 +60,7 @@ In this project was only used HTML and CSS.
 - **Responsive Design**
 - **DOM**
 - **Linters**
+- **A.I.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +68,7 @@ In this project was only used HTML and CSS.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- If you want to see a preview from the project go and [click here!](https:// /)
+- If you want to see a preview from the project go and [click here](https://rudicarrilloypr.github.io/capstone-module-1/main.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,18 +131,6 @@ You can deploy this project using your preferred deployment method. However we r
 - Twitter: [@onlyargo](https://twitter.com/onlyargo)
 - LinkedIn: [Rudi Carrillo](https://linkedin.com/in/rudi-carrillo)
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-These are the coming soon features for this project:
-
-1. [ ] Main program pop-ups.
-2. [ ] Newsletter and access to ultima news of the tour.
-3. [ ] Reservations & login pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
