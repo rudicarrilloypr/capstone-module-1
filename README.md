@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  <img src="./assets/logos/RClogo.png" alt="logo" width="140"  height="auto" />
+  <img src="./assets/logos/rc-softdev-banner.PNG" alt="logo" height="auto" />
   <br/>
 
   <h3><b>Capstone Project Module I</b></h3>
@@ -87,7 +87,7 @@ In order to run this project you need:
 - Git
 - GitHub account
 
-### Setup
+## Setup
 
 Clone this repository to your desired folder:
 
@@ -103,7 +103,7 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install don't required.
+Installation not required.
 
 ### Usage
 
@@ -125,12 +125,12 @@ You can deploy this project using your preferred deployment method. However we r
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Rudi Carrillo**
 
 - GitHub: [@rudicarrilloypr](https://github.com/rudicarrilloypr)
 - Twitter: [@onlyargo](https://twitter.com/onlyargo)
 - LinkedIn: [Rudi Carrillo](https://linkedin.com/in/rudi-carrillo)
-
+- Instagram: [@__rudicarrillo](https://www.instagram.com/_rudicarrillo/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,7 +138,7 @@ You can deploy this project using your preferred deployment method. However we r
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
- Original Design by Cindy Shin in Behance https://www.behance.net/gallery/29845175/CC-Global-Summit-2015.
+ Original Design by Cindy Shin in [Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
